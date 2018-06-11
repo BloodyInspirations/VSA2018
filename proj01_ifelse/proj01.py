@@ -40,9 +40,29 @@ birth_month = int(raw_input("What is your birth month in a number?"))
 birth_day = int(raw_input("What is the date of when you were born?[Number]"))
 date_current = 11
 month_current = 6
-A = int(month_current - birth_month)
-B = int(date_current - birth_day)
-print int(A + "/" + B)
+if birth_month >= month_current:
+    print "Your birthday is in" + str(birth_month - month_current)
+elif month_current >= birth_month:
+    print "Your birthday is in" + str(12-(month_current - birth_month))
+print "months"
+print '/'
+if birth_day >= date_current:
+    print str(birth_day - date_current)
+elif date_current >= birth_day:
+    print str(30-(date_current - birth_day))
+print "days."
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
