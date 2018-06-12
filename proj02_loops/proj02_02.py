@@ -1,13 +1,16 @@
-# Name:
-# Date:
+current_number = 1
+previous_number = 0
+X = int(raw_input("Enter a number."))
 
-# proj02_02: Fibonaci Sequence
+next_number = (previous_number + current_number)
 
-"""
-Asks a user how many Fibonacci numbers to generate and generates them. The Fibonacci 
-sequence is a sequence of numbers where the next number in the sequence is the sum of the 
-previous two numbers in the sequence. The sequence looks like this: 
-1, 1, 2, 3, 5, 8, 13...
-"""
+for numb in range(0, X):
+    print next_number
+    previous_number = current_number
+    current_number = next_number
+    next_number = (previous_number + current_number)
 
 
+
+X = int(raw_input("Enter a number."))
+print X * X
