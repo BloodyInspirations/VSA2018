@@ -53,8 +53,21 @@ elif date_current >= birth_day:
 print "days."
 
 
+print "Hello"
+your_name = raw_input("What is your name?")
+print your_name + ", you are probably wondering what the highest ranking movie you are allowed to see is."
+age_limitation = int(raw_input("First of all how old are you?"))
 
-
+if age_limitation == 17 or age_limitation > 17:
+    print "The highest ranking movie you can see would be R-rated."
+elif age_limitation == 13:
+    print "The highest ranking movie you can see would be rated PG-13."
+if age_limitation == 14 or age_limitation == 16:
+    print "The highest ranking movie you can see would be rated PG-13."
+elif age_limitation == 15:
+    print "The highest ranking movie you can see would be rated PG-13."
+if age_limitation == 12 or age_limitation < 12:
+    print "The highest ranking movie you can see would be rated PG or G."
 
 
 
